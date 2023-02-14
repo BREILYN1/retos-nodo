@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #FFF;
+  padding-bottom: 15px;
+}
+h2 i {
+  color: red;
+}
+
+h3 {
+  color: red;
+}
+
+#titulo-principal {
+  font-size: 40px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  margin-top: 0;
+  text-align: center;
+}
+
+.header {
+  background-color: red;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+.header img {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 150px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.card {
+  padding: 20px;
+  margin-right: 20px;
+  min-width: 100%;
+}
+
+.lista {
+  margin: 0;
+  padding: 0;
+}
+.lista > li {
+  list-style: none;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+.skill .skill-description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.skill .progress {
+  height: 10px;
+  background-color: #FFF;
+}
+.skill .progress.percentage {
+  transition: width 2s ease;
+  width: 0;
+  background-color: red;
+  animation-name: progress-bar;
+  animation-duration: 2s;
+}
+
+.idioma {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.idioma .stars {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.idioma .stars li {
+  list-style: none;
+}
+.idioma .stars li .fa-solid {
+  color: #F6A737;
+}
+
+@keyframes progress-bar {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .card {
+    min-width: 500px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

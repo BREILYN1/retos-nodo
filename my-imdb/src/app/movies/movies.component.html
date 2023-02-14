@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="./movies.component.css" />
+<p id="title-home">Movies</p>
+<div>
+  <a class="tittle" href="http://">
+    <span class="pipe">|</span> Favorito de los seguidores
+    <fa-icon class="tittle-flecha" [icon]="['fas', 'angle-right']"></fa-icon
+  ></a>
+  <p class="sub-tittle">Los mejores programas y películas de esta semana</p>
+</div>
+<div
+  id="carouselExampleControls"
+  class="carousel slide"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-inner">
+    <div class="carousel-item-active">
+      <div class="card" *ngFor="let movie of movies">
+        <img [src]="movie.image" class="card-img-top" alt="." />
+        <div class="card-body">
+          <h5 class="puntaje">
+            <fa-icon class="estrella" [icon]="['fas', 'star']"></fa-icon>
+            {{ movie.punctuation }}
+
+            <button class="calificar-pelicula">
+              <fa-icon
+                class="estrella-vacia"
+                [icon]="['fas', 'star']"
+              ></fa-icon>
+            </button>
+          </h5>
+          <h5 class="card-title">{{ movie.name }}</h5>
+          <p class="card-text">
+            <button type="button" class="btn-btn-secondary">
+              <span class="plus-large">+</span> Lista de seguimiento
+            </button>
+          </p>
+
+          <a [href]="movie.link" target="_blank" class="btn-btn-primary">
+            <fa-icon [icon]="['fas', 'play']"></fa-icon> Tráiler</a
+          >
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleControls"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleControls"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>

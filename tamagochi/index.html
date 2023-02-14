@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <input id="name" type="text" placeholder="ingrese el nombre de la mascota"></input>
+      <button id="confirmar-name">confirmar</button>
+
+    <div id="tamagotchi-container">
+    <div class="difuminado">
+      <div><h1 id="pet-mame">masacota</h1></div>
+      <div id="tamagotchi-image"></div>
+      <div class="bars1">
+        <h3>salud</h3>
+        <div class="progress-container-health">
+          <div class="progress-bar-health" style="width: 30%"><p>30%</p></div>
+        </div>
+      </div>
+      <div class="bars2">
+        <h3>Hambre</h3>
+        <div class="progress-container-hunger">
+          <div class="progress-bar-hunger" style="width: 70%"><p>70%</p></div>
+        </div>
+      </div>
+      <div id="buttons-container">
+        <button id="feed-button">Alimentar</button>
+        <button id="clean-button">Limpiar</button>
+
+        <button id="play-button">jugar</button>
+    </div>  
+    </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

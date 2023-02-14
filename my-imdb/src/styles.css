@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+
+  --bs-primary: #FAC539;
+
+  --main-bg-color: #000;
+  --secondary-bg-color: #121212;
+  --text-light: #fff;
+  --secondary-color: #000;
+  --primary-color: #FAC539;
+  --main-font-family: 'Roboto', sans-serif;
+  --main-font-size: 16px;
+}
+
+html {
+  font-size: var(--main-font-size);
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: var(--main-font-family);
+}
+
+.fs-1dot5 {
+  font-size: 1.5rem;
+}
+
+.ps-4dot5 {
+  padding-left: 2rem;
+}
+
+.primary-text-color {
+  color: var(--primary-color);
+}
+
+.primary-bg-color {
+  background-color: var(--primary-color);
+}
+
+.secondary-bg-color {
+  background-color: var(--secondary-bg-color);
+}
+
+.underline-on-hover:hover {
+  text-decoration: underline !important;
+}
+
+.bg-striped {
+  background: url('/assets/img/bg.png');
+}
+
+.offcanvas {
+  --bs-offcanvas-bg: #1F1F1F !important;
+}
+
+.logo {
+  --bs-btn-font-weight: bold;
+  --bs-btn-color: var(--secondary-color);
+  --bs-btn-bg: var(--primary-color);
+  --bs-btn-hover-color: var(--secondary-color);
+  --bs-btn-hover-bg: var(--primary-color);
+  font-family: 'Roboto', sans-serif;
+}
